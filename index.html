@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .one{
+            color: red;
+        }
+        .two{
+            font-size: 20px;
+        }
+        .three{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vue app</h1>
+    <div id="app">
+        <h2>{{ firstVar }}</h2>
+        <p>{{ firstMethod('firstParameter') }}</p>
+        <ul>
+            <li v-for="item in arrayList">{{ item }}</li>
+        </ul>
+        <a v-bind:href="url">Link</a>
+        <div v-bind:class="classes">Some text</div>
+        <hr>
+        <input type="text" v-model="name">
+        <p>{{ name }}</p>
+        <hr>
+        <p>I make {{ amount }} millions on stocks every year</p>
+        <button @click="count">Add +1</button>
+        <hr>
+        <p v-if="rich">if statement</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
