@@ -1,2 +1,2 @@
-# HelloWorld
+# vue-basics
 vue basics
